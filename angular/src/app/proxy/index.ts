@@ -1,2 +1,4 @@
 import * as Authors from './authors';
-export { Authors };
+import * as Books from './books';
+import * as Shared from './shared';
+export { Authors, Books, Shared };

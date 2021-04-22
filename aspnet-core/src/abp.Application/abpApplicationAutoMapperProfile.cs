@@ -1,3 +1,4 @@
+using abp.Books;
 using System;
 using abp.Shared;
 using abp.Authors;
@@ -20,6 +21,12 @@ namespace abp
             CreateMap<AuthorCreateDto, Author>().IgnoreFullAuditedObjectProperties().Ignore(x => x.ExtraProperties).Ignore(x => x.ConcurrencyStamp).Ignore(x => x.Id);
             CreateMap<AuthorUpdateDto, Author>().IgnoreFullAuditedObjectProperties().Ignore(x => x.ExtraProperties).Ignore(x => x.ConcurrencyStamp).Ignore(x => x.Id);
             CreateMap<Author, AuthorDto>();
+
+            CreateMap<BookCreateDto, Book>().IgnoreFullAuditedObjectProperties().Ignore(x => x.ExtraProperties).Ignore(x => x.ConcurrencyStamp).Ignore(x => x.Id);
+            CreateMap<BookUpdateDto, Book>().IgnoreFullAuditedObjectProperties().Ignore(x => x.ExtraProperties).Ignore(x => x.ConcurrencyStamp).Ignore(x => x.Id);
+            CreateMap<Book, BookDto>();
+            CreateMap<BookWithNavigationProperties, BookWithNavigationPropertiesDto>();
+            CreateMap<Author, LookupDto<Guid?>>().ForMember(dest => dest.DisplayName, opt => opt.MapFrom(src => src.NameSurname));
         }
     }
 }

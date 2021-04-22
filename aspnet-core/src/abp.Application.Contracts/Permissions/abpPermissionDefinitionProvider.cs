@@ -21,6 +21,11 @@ namespace abp.Permissions
             authorPermission.AddChild(abpPermissions.Authors.Create, L("Permission:Create"));
             authorPermission.AddChild(abpPermissions.Authors.Edit, L("Permission:Edit"));
             authorPermission.AddChild(abpPermissions.Authors.Delete, L("Permission:Delete"));
+
+            var bookPermission = myGroup.AddPermission(abpPermissions.Books.Default, L("Permission:Books"));
+            bookPermission.AddChild(abpPermissions.Books.Create, L("Permission:Create"));
+            bookPermission.AddChild(abpPermissions.Books.Edit, L("Permission:Edit"));
+            bookPermission.AddChild(abpPermissions.Books.Delete, L("Permission:Delete"));
         }
 
         private static LocalizableString L(string name)

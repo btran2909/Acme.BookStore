@@ -19,6 +19,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { APP_ROUTE_PROVIDER } from './route.provider';
 import { AUTHORS_AUTHOR_ROUTE_PROVIDER } from './authors/author/providers/author-route.provider';
+import { BOOKS_BOOK_ROUTE_PROVIDER } from './books/book/providers/book-route.provider';
 
 @NgModule({
   declarations: [AppComponent],
@@ -50,7 +51,7 @@ import { AUTHORS_AUTHOR_ROUTE_PROVIDER } from './authors/author/providers/author
     NgxsModule.forRoot([]),
     ThemeLeptonModule.forRoot(),
   ],
-  providers: [APP_ROUTE_PROVIDER, AUTHORS_AUTHOR_ROUTE_PROVIDER],
+  providers: [APP_ROUTE_PROVIDER, AUTHORS_AUTHOR_ROUTE_PROVIDER, BOOKS_BOOK_ROUTE_PROVIDER],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

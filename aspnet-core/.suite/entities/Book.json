@@ -1,0 +1,70 @@
+{
+  "Id": "bc86d2ab-c53b-41e9-b948-78aa6254516a",
+  "Name": "Book",
+  "OriginalName": "Book",
+  "NamePlural": "Books",
+  "DatabaseTableName": "Books",
+  "Namespace": "Books",
+  "BaseClass": "FullAuditedAggregateRoot",
+  "PrimaryKeyType": "Guid",
+  "IsMultiTenant": false,
+  "ShouldCreateUserInterface": true,
+  "ShouldCreateBackend": true,
+  "ShouldAddMigration": true,
+  "ShouldUpdateDatabase": true,
+  "CreateTests": true,
+  "Properties": [
+    {
+      "Id": "aa13d017-c231-43d7-9cb3-d90c9af7dd6d",
+      "Name": "Title",
+      "Type": "string",
+      "EnumType": "",
+      "EnumNamespace": "",
+      "EnumAngularImport": "shared/enums",
+      "IsNullable": false,
+      "IsRequired": false,
+      "MinLength": null,
+      "MaxLength": null,
+      "SortOrder": 0,
+      "SortType": 0,
+      "Regex": "",
+      "EmailValidation": false,
+      "EnumValues": null
+    },
+    {
+      "Id": "2d14d62e-8ddc-4fc4-a13f-13aed4a3b626",
+      "Name": "Year",
+      "Type": "int",
+      "EnumType": "",
+      "EnumNamespace": "",
+      "EnumAngularImport": "shared/enums",
+      "IsNullable": false,
+      "IsRequired": false,
+      "MinLength": null,
+      "MaxLength": null,
+      "SortOrder": 0,
+      "SortType": 0,
+      "Regex": "",
+      "EmailValidation": false,
+      "EnumValues": null
+    }
+  ],
+  "NavigationProperties": [
+    {
+      "Namespace": "abp.Authors",
+      "EntityName": "Author",
+      "EntityNameWithDuplicationNumber": "Author",
+      "EntitySetNameWithDuplicationNumber": "Authors",
+      "EntitySetName": "Authors",
+      "DtoNamespace": "abp.Authors",
+      "DtoEntityName": "AuthorDto",
+      "Type": "Guid",
+      "Name": "AuthorId",
+      "ReferencePropertyName": "Author",
+      "DisplayProperty": "NameSurname",
+      "UiPickType": "Dropdown",
+      "IsRequired": false
+    }
+  ],
+  "PhysicalFileName": "Book.json"
+}

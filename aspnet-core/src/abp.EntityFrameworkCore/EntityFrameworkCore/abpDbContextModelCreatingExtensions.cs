@@ -1,3 +1,4 @@
+using abp.Books;
 using Volo.Abp.EntityFrameworkCore.Modeling;
 using abp.Authors;
 using Microsoft.EntityFrameworkCore;
@@ -26,6 +27,14 @@ namespace abp.EntityFrameworkCore
                 b.ConfigureByConvention();
                 b.Property(x => x.NameSurname).HasColumnName(nameof(Author.NameSurname));
                 b.Property(x => x.Age).HasColumnName(nameof(Author.Age));
+            });
+
+            builder.Entity<Book>(b =>
+            {
+                b.ToTable(abpConsts.DbTablePrefix + "Books", abpConsts.DbSchema);
+                b.ConfigureByConvention();
+                b.Property(x => x.Title).HasColumnName(nameof(Book.Title));
+                b.Property(x => x.Year).HasColumnName(nameof(Book.Year));
             });
         }
     }

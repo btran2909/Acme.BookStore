@@ -46,6 +46,17 @@
     "MinNameSurname": "Min Name Surname",
     "MinAge": "Min Age",
     "MaxNameSurname": "Max Name Surname",
-    "MaxAge": "Max Age"
+    "MaxAge": "Max Age",
+    "Permission:Books": "Books",
+    "Books": "Books",
+    "NewBook": "New Book",
+    "Book": "Book",
+    "Menu:Books": "Books",
+    "Title": "Title",
+    "Year": "Year",
+    "MinTitle": "Min Title",
+    "MinYear": "Min Year",
+    "MaxTitle": "Max Title",
+    "MaxYear": "Max Year"
   }
 }
