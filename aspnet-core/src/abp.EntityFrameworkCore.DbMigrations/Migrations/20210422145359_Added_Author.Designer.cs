@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 using abp.EntityFrameworkCore;
@@ -10,9 +11,10 @@ using abp.EntityFrameworkCore;
 namespace abp.Migrations
 {
     [DbContext(typeof(abpMigrationsDbContext))]
-    partial class abpMigrationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210422145359_Added_Author")]
+    partial class Added_Author
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

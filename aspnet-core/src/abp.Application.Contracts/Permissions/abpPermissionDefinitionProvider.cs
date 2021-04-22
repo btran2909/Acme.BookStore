@@ -16,6 +16,11 @@ namespace abp.Permissions
 
             //Define your own permissions here. Example:
             //myGroup.AddPermission(abpPermissions.MyPermission1, L("Permission:MyPermission1"));
+
+            var authorPermission = myGroup.AddPermission(abpPermissions.Authors.Default, L("Permission:Authors"));
+            authorPermission.AddChild(abpPermissions.Authors.Create, L("Permission:Create"));
+            authorPermission.AddChild(abpPermissions.Authors.Edit, L("Permission:Edit"));
+            authorPermission.AddChild(abpPermissions.Authors.Delete, L("Permission:Delete"));
         }
 
         private static LocalizableString L(string name)

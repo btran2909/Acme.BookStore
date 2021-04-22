@@ -18,6 +18,7 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { APP_ROUTE_PROVIDER } from './route.provider';
+import { AUTHORS_AUTHOR_ROUTE_PROVIDER } from './authors/author/providers/author-route.provider';
 
 @NgModule({
   declarations: [AppComponent],
@@ -49,7 +50,7 @@ import { APP_ROUTE_PROVIDER } from './route.provider';
     NgxsModule.forRoot([]),
     ThemeLeptonModule.forRoot(),
   ],
-  providers: [APP_ROUTE_PROVIDER],
+  providers: [APP_ROUTE_PROVIDER, AUTHORS_AUTHOR_ROUTE_PROVIDER],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,3 +1,4 @@
+using abp.Authors;
 using Microsoft.EntityFrameworkCore;
 using abp.Users;
 using Volo.Abp.Data;
@@ -20,6 +21,7 @@ namespace abp.EntityFrameworkCore
     [ConnectionStringName("Default")]
     public class abpDbContext : AbpDbContext<abpDbContext>
     {
+        public DbSet<Author> Authors { get; set; }
         public DbSet<AppUser> Users { get; set; }
 
         /* Add DbSet properties for your Aggregate Roots / Entities here.
