@@ -1,4 +1,4 @@
-﻿using Volo.Abp.Account;
+using Volo.Abp.Account;
 using Volo.Abp.AuditLogging;
 using Volo.Abp.FeatureManagement;
 using Volo.Abp.Identity;
@@ -26,6 +26,7 @@ namespace abp
         typeof(LeptonThemeManagementApplicationContractsModule),
         typeof(TextTemplateManagementApplicationContractsModule)
     )]
+    [DependsOn(typeof(AbpAccountSharedApplicationContractsModule))]
     public class abpApplicationContractsModule : AbpModule
     {
 

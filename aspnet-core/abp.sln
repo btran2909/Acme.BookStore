@@ -1,9 +1,43 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29001.49
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "abp.Domain", "src\abp.Domain\abp.Domain.csproj", "{554AD327-6DBA-4F8F-96F8-81CE7A0C863F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Account.Pro.Application.Tests", "modules\Volo.Account.Pro\test\Volo.Abp.Account.Pro.Application.Tests\Volo.Abp.Account.Pro.Application.Tests.csproj", "{82044ab3-034a-41c8-bc66-88dedff6ddd9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Account.Pro.Shared.Application.Contracts", "modules\Volo.Account.Pro\src\Volo.Abp.Account.Pro.Shared.Application.Contracts\Volo.Abp.Account.Pro.Shared.Application.Contracts.csproj", "{a4158cfb-0e1c-4e88-8782-efe0470cda34}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Account.Pro.Shared.Application", "modules\Volo.Account.Pro\src\Volo.Abp.Account.Pro.Shared.Application\Volo.Abp.Account.Pro.Shared.Application.csproj", "{397ec286-ac6c-4b80-af5e-9f68016cb9a1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Account.Pro.Public.Web.IdentityServer", "modules\Volo.Account.Pro\src\Volo.Abp.Account.Pro.Public.Web.IdentityServer\Volo.Abp.Account.Pro.Public.Web.IdentityServer.csproj", "{fdb7b33c-29fc-4ecc-8f4e-0e37359da423}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Account.Pro.Public.Web", "modules\Volo.Account.Pro\src\Volo.Abp.Account.Pro.Public.Web\Volo.Abp.Account.Pro.Public.Web.csproj", "{669af537-c795-402e-82be-7b4992642848}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Account.Pro.Public.HttpApi.Client", "modules\Volo.Account.Pro\src\Volo.Abp.Account.Pro.Public.HttpApi.Client\Volo.Abp.Account.Pro.Public.HttpApi.Client.csproj", "{ede291bc-111d-43d7-a4fe-8bae15718cc3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Account.Pro.Public.HttpApi", "modules\Volo.Account.Pro\src\Volo.Abp.Account.Pro.Public.HttpApi\Volo.Abp.Account.Pro.Public.HttpApi.csproj", "{7ccbf207-a2a0-4c8f-a2cd-22917e761206}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Account.Pro.Public.Application.Contracts", "modules\Volo.Account.Pro\src\Volo.Abp.Account.Pro.Public.Application.Contracts\Volo.Abp.Account.Pro.Public.Application.Contracts.csproj", "{874a44a4-098e-4730-96e6-644b2f903ca0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Account.Pro.Public.Application", "modules\Volo.Account.Pro\src\Volo.Abp.Account.Pro.Public.Application\Volo.Abp.Account.Pro.Public.Application.csproj", "{9a65f5de-385c-4bb7-a194-112770d25c77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Account.Pro.Admin.Web", "modules\Volo.Account.Pro\src\Volo.Abp.Account.Pro.Admin.Web\Volo.Abp.Account.Pro.Admin.Web.csproj", "{f341c508-39b5-4963-8d56-dd967e5d167d}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Account.Pro.Admin.HttpApi.Client", "modules\Volo.Account.Pro\src\Volo.Abp.Account.Pro.Admin.HttpApi.Client\Volo.Abp.Account.Pro.Admin.HttpApi.Client.csproj", "{cf45ccfe-430a-4810-8560-11ad6a9f8499}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Account.Pro.Admin.HttpApi", "modules\Volo.Account.Pro\src\Volo.Abp.Account.Pro.Admin.HttpApi\Volo.Abp.Account.Pro.Admin.HttpApi.csproj", "{47a113f5-d192-4ccb-b0f5-5c28edb03db7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Account.Pro.Admin.Application.Contracts", "modules\Volo.Account.Pro\src\Volo.Abp.Account.Pro.Admin.Application.Contracts\Volo.Abp.Account.Pro.Admin.Application.Contracts.csproj", "{18efe204-a003-41c9-b2db-7da7dd5186f5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Account.Pro.Admin.Application", "modules\Volo.Account.Pro\src\Volo.Abp.Account.Pro.Admin.Application\Volo.Abp.Account.Pro.Admin.Application.csproj", "{e28bc6df-956f-41f1-aec0-c4c70cf41bc1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Volo.Account.Pro.Tests", "Volo.Account.Pro.Tests", "{5e5c15da-e64d-424d-a305-8bcdc99cf832}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Volo.Account.Pro", "Volo.Account.Pro", "{d6e9a5b7-9f1a-4321-b64f-9833a0607fee}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modules", "modules", "{2a6c8ff2-fb17-4aa4-909d-bd72e8466a7c}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "abp.Application", "src\abp.Application\abp.Application.csproj", "{1A94A50E-06DC-43C1-80B5-B662820EC3EB}"
 EndProject
@@ -45,6 +79,62 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82044ab3-034a-41c8-bc66-88dedff6ddd9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82044ab3-034a-41c8-bc66-88dedff6ddd9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82044ab3-034a-41c8-bc66-88dedff6ddd9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82044ab3-034a-41c8-bc66-88dedff6ddd9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{a4158cfb-0e1c-4e88-8782-efe0470cda34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{a4158cfb-0e1c-4e88-8782-efe0470cda34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{a4158cfb-0e1c-4e88-8782-efe0470cda34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{a4158cfb-0e1c-4e88-8782-efe0470cda34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{397ec286-ac6c-4b80-af5e-9f68016cb9a1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397ec286-ac6c-4b80-af5e-9f68016cb9a1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397ec286-ac6c-4b80-af5e-9f68016cb9a1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397ec286-ac6c-4b80-af5e-9f68016cb9a1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{fdb7b33c-29fc-4ecc-8f4e-0e37359da423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{fdb7b33c-29fc-4ecc-8f4e-0e37359da423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{fdb7b33c-29fc-4ecc-8f4e-0e37359da423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{fdb7b33c-29fc-4ecc-8f4e-0e37359da423}.Release|Any CPU.Build.0 = Release|Any CPU
+		{669af537-c795-402e-82be-7b4992642848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{669af537-c795-402e-82be-7b4992642848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{669af537-c795-402e-82be-7b4992642848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{669af537-c795-402e-82be-7b4992642848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ede291bc-111d-43d7-a4fe-8bae15718cc3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ede291bc-111d-43d7-a4fe-8bae15718cc3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ede291bc-111d-43d7-a4fe-8bae15718cc3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ede291bc-111d-43d7-a4fe-8bae15718cc3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ccbf207-a2a0-4c8f-a2cd-22917e761206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ccbf207-a2a0-4c8f-a2cd-22917e761206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ccbf207-a2a0-4c8f-a2cd-22917e761206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ccbf207-a2a0-4c8f-a2cd-22917e761206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{874a44a4-098e-4730-96e6-644b2f903ca0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{874a44a4-098e-4730-96e6-644b2f903ca0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{874a44a4-098e-4730-96e6-644b2f903ca0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{874a44a4-098e-4730-96e6-644b2f903ca0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9a65f5de-385c-4bb7-a194-112770d25c77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9a65f5de-385c-4bb7-a194-112770d25c77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9a65f5de-385c-4bb7-a194-112770d25c77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9a65f5de-385c-4bb7-a194-112770d25c77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{f341c508-39b5-4963-8d56-dd967e5d167d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{f341c508-39b5-4963-8d56-dd967e5d167d}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{f341c508-39b5-4963-8d56-dd967e5d167d}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{f341c508-39b5-4963-8d56-dd967e5d167d}.Release|Any CPU.Build.0 = Release|Any CPU
+		{cf45ccfe-430a-4810-8560-11ad6a9f8499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{cf45ccfe-430a-4810-8560-11ad6a9f8499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{cf45ccfe-430a-4810-8560-11ad6a9f8499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{cf45ccfe-430a-4810-8560-11ad6a9f8499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47a113f5-d192-4ccb-b0f5-5c28edb03db7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47a113f5-d192-4ccb-b0f5-5c28edb03db7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47a113f5-d192-4ccb-b0f5-5c28edb03db7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47a113f5-d192-4ccb-b0f5-5c28edb03db7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18efe204-a003-41c9-b2db-7da7dd5186f5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18efe204-a003-41c9-b2db-7da7dd5186f5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18efe204-a003-41c9-b2db-7da7dd5186f5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18efe204-a003-41c9-b2db-7da7dd5186f5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{e28bc6df-956f-41f1-aec0-c4c70cf41bc1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{e28bc6df-956f-41f1-aec0-c4c70cf41bc1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{e28bc6df-956f-41f1-aec0-c4c70cf41bc1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{e28bc6df-956f-41f1-aec0-c4c70cf41bc1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{554AD327-6DBA-4F8F-96F8-81CE7A0C863F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{554AD327-6DBA-4F8F-96F8-81CE7A0C863F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{554AD327-6DBA-4F8F-96F8-81CE7A0C863F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -114,6 +204,22 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{82044ab3-034a-41c8-bc66-88dedff6ddd9} = {5e5c15da-e64d-424d-a305-8bcdc99cf832}
+		{a4158cfb-0e1c-4e88-8782-efe0470cda34} = {d6e9a5b7-9f1a-4321-b64f-9833a0607fee}
+		{397ec286-ac6c-4b80-af5e-9f68016cb9a1} = {d6e9a5b7-9f1a-4321-b64f-9833a0607fee}
+		{fdb7b33c-29fc-4ecc-8f4e-0e37359da423} = {d6e9a5b7-9f1a-4321-b64f-9833a0607fee}
+		{669af537-c795-402e-82be-7b4992642848} = {d6e9a5b7-9f1a-4321-b64f-9833a0607fee}
+		{ede291bc-111d-43d7-a4fe-8bae15718cc3} = {d6e9a5b7-9f1a-4321-b64f-9833a0607fee}
+		{7ccbf207-a2a0-4c8f-a2cd-22917e761206} = {d6e9a5b7-9f1a-4321-b64f-9833a0607fee}
+		{874a44a4-098e-4730-96e6-644b2f903ca0} = {d6e9a5b7-9f1a-4321-b64f-9833a0607fee}
+		{9a65f5de-385c-4bb7-a194-112770d25c77} = {d6e9a5b7-9f1a-4321-b64f-9833a0607fee}
+		{f341c508-39b5-4963-8d56-dd967e5d167d} = {d6e9a5b7-9f1a-4321-b64f-9833a0607fee}
+		{cf45ccfe-430a-4810-8560-11ad6a9f8499} = {d6e9a5b7-9f1a-4321-b64f-9833a0607fee}
+		{47a113f5-d192-4ccb-b0f5-5c28edb03db7} = {d6e9a5b7-9f1a-4321-b64f-9833a0607fee}
+		{18efe204-a003-41c9-b2db-7da7dd5186f5} = {d6e9a5b7-9f1a-4321-b64f-9833a0607fee}
+		{e28bc6df-956f-41f1-aec0-c4c70cf41bc1} = {d6e9a5b7-9f1a-4321-b64f-9833a0607fee}
+		{5e5c15da-e64d-424d-a305-8bcdc99cf832} = {04DBDB01-70F4-4E06-B468-8F87850B22BE}
+		{d6e9a5b7-9f1a-4321-b64f-9833a0607fee} = {2a6c8ff2-fb17-4aa4-909d-bd72e8466a7c}
 		{554AD327-6DBA-4F8F-96F8-81CE7A0C863F} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
 		{1A94A50E-06DC-43C1-80B5-B662820EC3EB} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
 		{C956DD76-69C8-4A9C-83EA-D17DF83340FD} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}

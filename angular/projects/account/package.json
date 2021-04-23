@@ -1,0 +1,14 @@
+{
+  "name": "@volo/abp.ng.account",
+  "version": "4.2.2",
+  "homepage": "https://abp.io",
+  "dependencies": {
+    "@abp/ng.theme.shared": "~4.2.2",
+    "@volo/abp.commercial.ng.ui": "~4.2.2",
+    "cropperjs": "^1.5.7",
+    "tslib": "^2.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
