@@ -1,4 +1,4 @@
-﻿using Localization.Resources.AbpUi;
+using Localization.Resources.AbpUi;
 using abp.Localization;
 using Volo.Abp.Account;
 using Volo.Abp.AuditLogging;
@@ -12,6 +12,7 @@ using Volo.Saas.Host;
 using Volo.Abp.LeptonTheme;
 using Volo.Abp.Localization;
 using Volo.Abp.TextTemplateManagement;
+using Volo.Test.Pro;
 
 namespace abp
 {
@@ -29,6 +30,7 @@ namespace abp
         typeof(LeptonThemeManagementHttpApiModule),
         typeof(TextTemplateManagementHttpApiModule)
         )]
+    [DependsOn(typeof(ProHttpApiModule))]
     public class abpHttpApiModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)

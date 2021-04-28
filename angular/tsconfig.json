@@ -33,6 +33,9 @@
       ],
       "@volo/abp.ng.account/config": [
         "projects/account/config/src/public-api.ts"
+      ],
+      "pro/projects": [
+        "projects/Volo.Test.Pro/projects/pro/src/public-api.ts"
       ]
     }
   },

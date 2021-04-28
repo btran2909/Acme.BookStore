@@ -215,6 +215,45 @@
           }
         }
       }
+    },
+    "Volo.Test.Pro": {
+      "projectType": "library",
+      "root": "projects/Volo.Test.Pro",
+      "sourceRoot": "projects/Volo.Test.Pro/src",
+      "prefix": "abp",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/Volo.Test.Pro/tsconfig.lib.json",
+            "project": "projects/Volo.Test.Pro/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/Volo.Test.Pro/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-builders/jest:run",
+          "options": {
+            "coverage": true,
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/Volo.Test.Pro/tsconfig.lib.json",
+              "projects/Volo.Test.Pro/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "abp",

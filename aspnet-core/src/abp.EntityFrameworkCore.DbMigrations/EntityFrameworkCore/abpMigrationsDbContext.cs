@@ -11,6 +11,7 @@ using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.TextTemplateManagement.EntityFrameworkCore;
 using Volo.Saas.EntityFrameworkCore;
 using Volo.Abp.BlobStoring.Database.EntityFrameworkCore;
+using Volo.Test.Pro.EntityFrameworkCore;
 
 namespace abp.EntityFrameworkCore
 {
@@ -48,6 +49,7 @@ namespace abp.EntityFrameworkCore
             /* Configure your own tables/entities inside the Configureabp method */
 
             builder.Configureabp();
+            builder.ConfigurePro();
         }
     }
 }

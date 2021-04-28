@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.Account;
 using Volo.Abp.AuditLogging;
 using Volo.Abp.FeatureManagement;
@@ -10,6 +10,7 @@ using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement;
 using Volo.Abp.TextTemplateManagement;
 using Volo.Saas.Host;
+using Volo.Test.Pro;
 
 namespace abp
 {
@@ -27,6 +28,7 @@ namespace abp
         typeof(LeptonThemeManagementHttpApiClientModule),
         typeof(TextTemplateManagementHttpApiClientModule)
     )]
+    [DependsOn(typeof(ProHttpApiClientModule))]
     public class abpHttpApiClientModule : AbpModule
     {
         public const string RemoteServiceName = "Default";

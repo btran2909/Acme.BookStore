@@ -9,6 +9,7 @@ using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement;
 using Volo.Abp.TextTemplateManagement;
 using Volo.Saas.Host;
+using Volo.Test.Pro;
 
 namespace abp
 {
@@ -27,6 +28,7 @@ namespace abp
         typeof(TextTemplateManagementApplicationContractsModule)
     )]
     [DependsOn(typeof(AbpAccountSharedApplicationContractsModule))]
+    [DependsOn(typeof(ProApplicationContractsModule))]
     public class abpApplicationContractsModule : AbpModule
     {
 

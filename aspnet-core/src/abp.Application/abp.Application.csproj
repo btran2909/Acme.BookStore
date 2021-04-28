@@ -10,7 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="..\abp.Domain\abp.Domain.csproj" />
     <ProjectReference Include="..\abp.Application.Contracts\abp.Application.Contracts.csproj" />
-  </ItemGroup>
+  <ProjectReference Include="..\..\modules\Volo.Test.Pro\src\Volo.Test.Pro.Application\Volo.Test.Pro.Application.csproj" /></ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\modules\Volo.Account.Pro\src\Volo.Abp.Account.Pro.Shared.Application\Volo.Abp.Account.Pro.Shared.Application.csproj" />

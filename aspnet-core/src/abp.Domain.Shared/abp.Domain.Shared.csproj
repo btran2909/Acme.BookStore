@@ -23,7 +23,7 @@
     <PackageReference Include="Volo.Abp.LeptonTheme.Management.Domain.Shared" Version="4.2.2" />
     <PackageReference Include="Volo.Abp.Commercial.SuiteTemplates" Version="4.2.2" />
     <PackageReference Include="Volo.Abp.GlobalFeatures" Version="4.2.2" />
-  </ItemGroup>
+  <ProjectReference Include="..\..\modules\Volo.Test.Pro\src\Volo.Test.Pro.Domain.Shared\Volo.Test.Pro.Domain.Shared.csproj" /></ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="5.0.*" />
