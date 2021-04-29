@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.Modularity;
+using Volo.Test.Pro.AuthorPros;
 
 namespace Volo.Test.Pro.EntityFrameworkCore
 {
@@ -17,6 +18,7 @@ namespace Volo.Test.Pro.EntityFrameworkCore
                 /* Add custom repositories here. Example:
                  * options.AddRepository<Question, EfCoreQuestionRepository>();
                  */
+                options.AddRepository<Author, EfCoreAuthorRepository>();
             });
         }
     }

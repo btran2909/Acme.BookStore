@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
+using Volo.Test.Pro.AuthorPros;
 
 namespace Volo.Test.Pro.EntityFrameworkCore
 {
@@ -10,6 +11,7 @@ namespace Volo.Test.Pro.EntityFrameworkCore
         /* Add DbSet for each Aggregate Root here. Example:
          * public DbSet<Question> Questions { get; set; }
          */
+        public DbSet<Author> Authors { get; set; }
 
         public ProDbContext(DbContextOptions<ProDbContext> options) 
             : base(options)

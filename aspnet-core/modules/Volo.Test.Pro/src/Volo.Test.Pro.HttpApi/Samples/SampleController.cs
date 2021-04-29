@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp;
+using Volo.Test.Pro.AuthorPros;
 
 namespace Volo.Test.Pro.Samples
 {
@@ -17,17 +18,17 @@ namespace Volo.Test.Pro.Samples
         }
 
         [HttpGet]
-        public async Task<SampleDto> GetAsync()
+        public async Task<SampleDto> GetAsync(GetAuthorsInput input)
         {
-            return await _sampleAppService.GetAsync();
+            return await _sampleAppService.GetAsync(input);
         }
 
         [HttpGet]
         [Route("authorized")]
         [Authorize]
-        public async Task<SampleDto> GetAuthorizedAsync()
+        public async Task<SampleDto> GetAuthorizedAsync(GetAuthorsInput input)
         {
-            return await _sampleAppService.GetAsync();
+            return await _sampleAppService.GetAsync(input);
         }
     }
 }

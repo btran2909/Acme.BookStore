@@ -1,6 +1,8 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp;
+using Volo.Abp.EntityFrameworkCore.Modeling;
+using Volo.Test.Pro.AuthorPros;
 
 namespace Volo.Test.Pro.EntityFrameworkCore
 {
@@ -38,6 +40,13 @@ namespace Volo.Test.Pro.EntityFrameworkCore
                 b.HasIndex(q => q.CreationTime);
             });
             */
+            builder.Entity<Author>(b =>
+            {
+                b.ToTable(abpConsts.DbTablePrefix + "Authors", abpConsts.DbSchema);
+                b.ConfigureByConvention();
+                b.Property(x => x.NameSurname).HasColumnName(nameof(Author.NameSurname));
+                b.Property(x => x.Age).HasColumnName(nameof(Author.Age));
+            });
         }
     }
 }

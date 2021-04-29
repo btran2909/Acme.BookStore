@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="4.2.2" />
+    <ProjectReference Include="..\..\..\..\src\abp.Domain.Shared\abp.Domain.Shared.csproj" />
     <ProjectReference Include="..\Volo.Test.Pro.Domain\Volo.Test.Pro.Domain.csproj" />
   </ItemGroup>
 

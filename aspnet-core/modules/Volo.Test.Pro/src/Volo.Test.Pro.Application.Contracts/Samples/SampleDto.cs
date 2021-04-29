@@ -1,7 +1,11 @@
-﻿namespace Volo.Test.Pro.Samples
+﻿using System.Collections.Generic;
+using Volo.Test.Pro.AuthorPros;
+
+namespace Volo.Test.Pro.Samples
 {
     public class SampleDto
     {
-        public int Value { get; set; }
+        public long TotalCount { get; set; }
+        public List<Author> Items { get; set; }
     }
 }
