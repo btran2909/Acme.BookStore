@@ -13,11 +13,11 @@ const routes: Routes = [
     loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule),
     canActivate: [AuthGuard, PermissionGuard],
   },
-  {
-    path: 'pro',
-    loadChildren: () => import('projects/Volo.Test.Pro/projects/pro/src/public-api').then(m => m.ProModule),
-    canActivate: [AuthGuard, PermissionGuard],
-  },
+  // {
+  //   path: 'pro',
+  //   loadChildren: () => import('projects/Volo.Test.Pro/projects/pro/src/public-api').then(m => m.ProModule),
+  //   canActivate: [AuthGuard, PermissionGuard],
+  // },
   {
     path: 'identity',
     loadChildren: () => import('@volo/abp.ng.identity').then(m => m.IdentityModule.forLazy()),

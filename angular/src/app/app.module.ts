@@ -51,7 +51,7 @@ import { ProConfigModule } from 'projects/Volo.Test.Pro/projects/pro/config/src/
     SettingManagementConfigModule.forRoot(),
     NgxsModule.forRoot([]),
     ThemeLeptonModule.forRoot(),
-    ProConfigModule.forRoot()
+    // ProConfigModule.forRoot()
   ],
   providers: [APP_ROUTE_PROVIDER, AUTHORS_AUTHOR_ROUTE_PROVIDER, BOOKS_BOOK_ROUTE_PROVIDER],
   bootstrap: [AppComponent],
