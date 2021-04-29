@@ -10,7 +10,7 @@ using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement;
 using Volo.Abp.TextTemplateManagement;
 using Volo.Saas.Host;
-using Volo.Test.Pro;
+//using Volo.Test.Pro;
 
 namespace abp
 {
@@ -28,7 +28,7 @@ namespace abp
         typeof(LeptonThemeManagementHttpApiClientModule),
         typeof(TextTemplateManagementHttpApiClientModule)
     )]
-    [DependsOn(typeof(ProHttpApiClientModule))]
+    //[DependsOn(typeof(ProHttpApiClientModule))]
     public class abpHttpApiClientModule : AbpModule
     {
         public const string RemoteServiceName = "Default";

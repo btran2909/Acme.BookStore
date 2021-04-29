@@ -17,7 +17,7 @@ using Volo.Abp.VirtualFileSystem;
 using Volo.Saas;
 using Volo.Abp.BlobStoring.Database;
 using Volo.Abp.GlobalFeatures;
-using Volo.Test.Pro;
+//using Volo.Test.Pro;
 
 namespace abp
 {
@@ -36,7 +36,7 @@ namespace abp
         typeof(AbpGlobalFeaturesModule),
         typeof(BlobStoringDatabaseDomainSharedModule)
         )]
-    [DependsOn(typeof(ProDomainSharedModule))]
+    //[DependsOn(typeof(ProDomainSharedModule))]
     public class abpDomainSharedModule : AbpModule
     {
         public override void PreConfigureServices(ServiceConfigurationContext context)
