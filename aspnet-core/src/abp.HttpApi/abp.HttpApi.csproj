@@ -8,8 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\abp.Application.Contracts\abp.Application.Contracts.csproj" />
-  <ProjectReference Include="..\..\modules\Volo.Test.Pro\src\Volo.Test.Pro.HttpApi\Volo.Test.Pro.HttpApi.csproj" /></ItemGroup>
+    <ProjectReference Include="..\abp.Application.Contracts\abp.Application.Contracts.csproj" /></ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.PermissionManagement.HttpApi" Version="4.2.2" />
