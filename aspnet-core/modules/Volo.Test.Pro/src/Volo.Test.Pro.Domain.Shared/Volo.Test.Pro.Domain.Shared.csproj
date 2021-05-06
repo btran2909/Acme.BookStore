@@ -1,8 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="..\..\common.props" />
 
   <PropertyGroup>
+    <LangVersion>latest</LangVersion>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Volo.Test.Pro</RootNamespace>
     <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
@@ -10,6 +11,9 @@
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Validation" Version="4.2.2" />
+    <PackageReference Include="Volo.Abp.Ldap" Version="4.2.2" />
+    <PackageReference Include="Volo.Abp.Identity.Pro.Application.Contracts" Version="4.2.2" />
+    <PackageReference Include="Volo.Abp.Commercial.Core" Version="4.2.2" />
   </ItemGroup>
 
   <ItemGroup>

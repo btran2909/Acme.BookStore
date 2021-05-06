@@ -7,6 +7,8 @@ import { DateAdapter } from '@abp/ng.theme.shared/extensions';
 import { Confirmation, ConfirmationService } from '@abp/ng.theme.shared';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { filter, finalize, switchMap, tap } from 'rxjs/operators';
+import { ConfigStateService } from '@abp/ng.core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'lib-pro',
@@ -33,13 +35,26 @@ export class ProComponent implements OnInit {
 
   selected?: AuthorDto;
 
+  isFeature: boolean | string = false;
+
   constructor(
     private service: ProService,
     public readonly list: ListService,
     public readonly track: TrackByService,
     private confirmation: ConfirmationService,
-    private fb: FormBuilder
-  ) {}
+    private fb: FormBuilder,
+    private config: ConfigStateService,
+    private router: Router
+  ) {
+    this.isFeature = config.getFeature("Pro.EnableLdapPro").toLocaleLowerCase()
+    const abpSession = JSON.parse(localStorage.getItem('abpSession'))
+    if(abpSession && !abpSession.tenant.id) {
+      this.isFeature = 'true'
+    } else {
+      if(this.isFeature == 'false')
+        this.router.navigate(['/'])
+    }
+  }
 
   ngOnInit(): void {
     // this.service.sample().subscribe(console.log);

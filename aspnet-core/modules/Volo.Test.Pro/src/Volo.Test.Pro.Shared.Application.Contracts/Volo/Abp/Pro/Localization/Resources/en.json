@@ -1,8 +1,6 @@
 {
   "culture": "en",
   "texts": {
-    "SamplePageMessage": "A sample page for the Pro module",
-    "Menu:Pro": "Test Pro",
     "Volo.Pro:InvalidEmailAddress": "Can not find the given email address:{0}",
     "Volo.Pro:SelfRegistrationDisabled": "Self registration is disabled!",
     "Volo.Pro:PhoneNumberEmpty": "Phone number is empty!",
@@ -52,6 +50,7 @@
     "DisplayName:IsSelfRegistrationEnabled": "Enable self registration",
     "Description:IsSelfRegistrationEnabled": "Users can create accounts themselves.",
     "DisplayName:IsRememberBrowserEnabled": "Remember browser",
+    "Menu:Pro": "Pro",
     "Menu:Pro:Ldap": "Ldap Pro",
     "ProSettingsGeneral": "General",
     "ProSettingsTwoFactor": "Two factor",
@@ -82,7 +81,6 @@
     "DisplayName:EnableLdapLogin": "Enable Ldap login",
     "Description:EnableLdapLogin": "Enable Ldap login",
     "Feature:ProGroup": "Pro",
-    "Pro:EnableLdapPro": "Enable Ldap Pro",
     "Feature:EnableLdapPro": "Enable Ldap Pro",
     "Feature:EnableLdapProDescription": "Enable Ldap Pro",
     "DoYouWantToVerifyPhoneNumberMessage": "You've changed your phone number information. Would you like to verify it now?",

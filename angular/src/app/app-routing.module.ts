@@ -15,8 +15,7 @@ const routes: Routes = [
   },
   {
     path: 'pro',
-    loadChildren: () => import('projects/Volo.Test.Pro/projects/pro/src/public-api').then(m => m.ProModule),
-    canActivate: [AuthGuard, PermissionGuard],
+    loadChildren: () => import('projects/Volo.Test.Pro/projects/pro/src/public-api').then(m => m.ProModule)
   },
   {
     path: 'identity',
