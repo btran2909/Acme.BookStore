@@ -1,6 +1,6 @@
 {
-  "name": "@my-company-name/pro",
-  "version": "0.0.1",
+  "name": "ole-pro",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^9.1.11",
     "@angular/core": "^9.1.11",

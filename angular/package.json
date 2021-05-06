@@ -35,6 +35,7 @@
     "@volo/abp.ng.saas": "~4.2.2",
     "@volo/abp.ng.text-template-management": "~4.2.2",
     "@volo/abp.ng.theme.lepton": "~4.2.2",
+    "ole-pro": "0.0.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

@@ -15,7 +15,7 @@ const routes: Routes = [
   },
   {
     path: 'pro',
-    loadChildren: () => import('projects/Volo.Test.Pro/projects/pro/src/public-api').then(m => m.ProModule)
+    loadChildren: () => import('ole-pro').then(m => m.ProModule.forLazy())
   },
   {
     path: 'identity',
