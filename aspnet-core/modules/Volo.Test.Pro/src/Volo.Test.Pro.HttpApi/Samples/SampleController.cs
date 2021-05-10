@@ -9,7 +9,7 @@ using Volo.Test.Pro.Feature;
 namespace Volo.Test.Pro.Samples
 {
     [RemoteService]
-    //[RequiresFeature(ProFeature.EnableLdapPro)]
+    [RequiresFeature(ProFeature.EnableLdapPro)]
     [Route("api/Pro/sample")]
     public class SampleController : ProController, ISampleAppService
     {

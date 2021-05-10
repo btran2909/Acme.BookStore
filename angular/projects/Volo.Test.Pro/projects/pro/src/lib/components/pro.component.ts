@@ -35,7 +35,7 @@ export class ProComponent implements OnInit {
 
   selected?: AuthorDto;
 
-  isFeature: boolean | string = false;
+  // isFeature: boolean | string = false;
 
   constructor(
     private service: ProService,
@@ -46,14 +46,14 @@ export class ProComponent implements OnInit {
     private config: ConfigStateService,
     private router: Router
   ) {
-    this.isFeature = config.getFeature("Pro.EnableLdapPro").toLocaleLowerCase()
-    const abpSession = JSON.parse(localStorage.getItem('abpSession'))
-    if(abpSession && !abpSession.tenant.id) {
-      this.isFeature = 'true'
-    } else {
-      if(this.isFeature == 'false')
-        this.router.navigate(['/'])
-    }
+    // this.isFeature = config.getFeature("Pro.EnableLdapPro").toLocaleLowerCase()
+    // const abpSession = JSON.parse(localStorage.getItem('abpSession'))
+    // if(abpSession && !abpSession.tenant.id) {
+    //   this.isFeature = 'true'
+    // } else {
+    //   if(this.isFeature == 'false')
+    //     this.router.navigate(['/'])
+    // }
   }
 
   ngOnInit(): void {

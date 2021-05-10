@@ -58,6 +58,7 @@
     "MinTitle": "Min Title",
     "MinYear": "Min Year",
     "MaxTitle": "Max Title",
-    "MaxYear": "Max Year"
+    "MaxYear": "Max Year",
+    "Pro.EnableLdapPro":  "Pro Module"
   }
 }
